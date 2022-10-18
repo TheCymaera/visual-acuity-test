@@ -1,0 +1,72 @@
+html, body {
+	position: absolute;
+	margin: 0;
+	inset: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	background-color: white;
+	color: black;
+}
+
+.chart {
+	font-family: 'Times New Roman', serif;
+	font-size: 200px;
+	max-width: 600px;
+	margin: auto;
+}
+
+.chart > * {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-self: center;
+}
+
+.chart > * > * {
+	width: 2em;
+	text-align: center;
+}
+
+nav {
+	position: relative;
+	height: 2em;
+	width: 100%;
+	font-size: 30px;
+	border-bottom: 1px solid #ccc;
+
+	display: flex;
+	flex-direction: row;
+}
+
+nav > * {
+	height: 2em;
+	width: 2em;
+
+	background-color: transparent;
+	border: none;
+	
+	cursor: pointer;
+	
+	font: inherit;
+	color: inherit;
+	text-decoration: inherit;
+	text-align: center;
+
+	display: grid;
+	place-items: center;
+}
+
+nav > * > * {
+	font: inherit;
+	color: inherit;
+}
+
+nav > * {
+	transition: opacity .1s;
+}
+
+nav > :hover {
+	opacity: .6;
+}
