@@ -1,0 +1,47 @@
+
+body {
+	display: flex;
+}
+
+.chart {
+	font-family: 'Times New Roman', serif;
+	font-size: 200px;
+	max-width: 600px;
+	margin: auto;
+
+	height: 100%;
+	overflow: auto;
+
+	background-color: white;
+	color: black;
+}
+
+.chart::after {
+	display: block;
+	content: "";
+	height: 300px;
+}
+
+.chart > * {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-self: center;
+	padding: 5px 0;
+	line-height: 1;
+}
+
+.chart > * > * {
+	width: 2em;
+	text-align: center;
+}
+
+i {
+	font-size: 20px;
+}
+
+svg {
+	height: 1em;
+	width: 1.5em;
+	fill: currentColor;
+}
