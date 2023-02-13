@@ -14,7 +14,7 @@ document.body.innerHTML = /*html*/`
 
 	<helion-nav-rail-spacer></helion-nav-rail-spacer>
 
-	<a class="helion-nav-rail-icon-button" href="https://github.com/TheCymaera/visual-acuity-test" title="GitHub">
+	<a class="helion-nav-rail-icon-button" href="https://github.com/TheCymaera/visual-acuity-test" target="_blank" title="GitHub">
 		${fa5_brands_github}
 	</a>
 	<a class="helion-nav-rail-icon-button" href="/" title="Home">
