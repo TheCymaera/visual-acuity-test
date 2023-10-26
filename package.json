@@ -9,7 +9,6 @@
     "vite": "^4.2.0"
   },
   "dependencies": {
-    "fontawesome-svgs": "^1.0.2",
-    "helion": "^1.0.8"
+    "fontawesome-svgs": "^1.0.2"
   }
 }

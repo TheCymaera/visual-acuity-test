@@ -1,26 +1,22 @@
-import {} from "helion/core.js";
-import {} from "helion/LightTheme.js";
-import {} from "helion/Panel.js";
-import {} from "helion/NavRail.js";
 import { fa5_brands_github, fa5_solid_dice, fa5_solid_home } from "fontawesome-svgs";
 import "./main.css";
 
 document.body.innerHTML = /*html*/`
 <div class="chart"></div>
-<helion-nav-rail>
-	<button class="helion-nav-rail-icon-button generate" title="Randomize">
+<nav class="NavRail">
+	<button class="IconButton generate" title="Randomize">
 		${fa5_solid_dice}
 	</button>
 
-	<helion-nav-rail-spacer></helion-nav-rail-spacer>
+	<div style="flex: 1"></div>
 
-	<a class="helion-nav-rail-icon-button" href="https://github.com/TheCymaera/visual-acuity-test" target="_blank" title="GitHub">
+	<a class="IconButton" href="https://github.com/TheCymaera/visual-acuity-test" target="_blank" title="GitHub">
 		${fa5_brands_github}
 	</a>
-	<a class="helion-nav-rail-icon-button" href="/" title="Home">
+	<a class="IconButton" href="/" title="Home">
 		${fa5_solid_home}
 	</a>
-</helion-nav-rail>
+</nav>
 `;
 
 const rows = 15;

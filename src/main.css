@@ -1,7 +1,68 @@
+:root {
+	--surface: #eee;
+	--onSurface: #333;
+
+	--surfaceContainer: #fff;
+	--onSurfaceContainer: #333;
+}
+
+html, body {
+	margin: 0;
+	height: 100%;
+}
 
 body {
 	display: flex;
+
+	background-color: var(--surface);
+	color: var(--onSurface);
 }
+
+.NavRail {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	background-color: var(--surfaceContainer);
+	color: var(--onSurfaceContainer);
+}
+
+.IconButton {
+	display: grid;
+	place-items: center;
+	width:  4em;
+	height: 4em;
+
+	position: relative;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	border: none;
+
+	cursor: pointer;
+}
+
+.IconButton::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	border-radius: 100%;
+	background-color: currentColor;
+	opacity: 0;
+
+	transition: opacity 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+	.IconButton:hover::before {
+		opacity: 0.1;
+	}
+}
+
+.IconButton:active::before {
+	opacity: 0.2;
+}
+
 
 .chart {
 	font-family: 'Times New Roman', serif;
@@ -34,14 +95,4 @@ body {
 .chart > * > * {
 	width: 2em;
 	text-align: center;
-}
-
-i {
-	font-size: 20px;
-}
-
-svg {
-	height: 1em;
-	width: 1.5em;
-	fill: currentColor;
 }
